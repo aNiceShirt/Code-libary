@@ -1,0 +1,6 @@
+1. Screen
+2. Line in middle
+3. Players
+4. Ball
+5. Boundaries
+6. Scoreboard
