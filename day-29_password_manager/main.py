@@ -33,15 +33,15 @@ entry_website.grid(column=1,row=1, columnspan=2)
 entry_email_username = Entry(width=35, borderwidth=2)
 entry_email_username.grid(column=1,row=2, columnspan=2)
 
-entry_password = Entry(width=18, borderwidth=2)
-entry_password.grid(column=1,row=3)
+entry_password = Entry(width=17, borderwidth=2,)
+entry_password.grid(column=1,row=3, columnspan=1)
 
 ## Buttons ##
 def action_password():
     print("Action_password")
 
-button = Button(text="Generate Password", command=action_password, width=14)
-button.grid(column=2, row=3)
+button = Button(text="Generate Password", command=action_password)
+button.grid(column=2, row=3, columnspan=1)
 
 
 def action_add():
