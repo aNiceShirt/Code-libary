@@ -14,10 +14,14 @@ def next_card():
     current_card  = random.choice(to_learn)
     canvas.itemconfig(card_title, text='French')
     canvas.itemconfig(card_word, text=current_card['French'])
+    canvas.itemconfig(card_image, image=card_front_image)
+    window.after(3000, flip_card)
+    
 
 def flip_card():
     canvas.itemconfig(card_title, text='English')
     canvas.itemconfig(card_word, text=current_card['English'])
+    canvas.itemconfig(card_image, image=card_back_image)
 
 
 ## Window set-up
@@ -51,11 +55,8 @@ card_word = canvas.create_text(400, 263, text="word", font=("Ariel", 60, "bold")
 
 next_card()
 
+# window.after(1000, flip_card())
 
-
-
-
-#window.after(1000, canvas.itemconfig(card_image, image=card_back_image))
 
 window.mainloop()
 
