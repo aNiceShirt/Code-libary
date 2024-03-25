@@ -40,10 +40,8 @@ except FileNotFoundError:
 else:
     to_learn = data.to_dict(orient="records")
 
-
 current_card = {}   
 flip_timer = window.after(3000, flip_card)
-#to_learn = {}
 
 ## Card images
 card_front_image = PhotoImage(file= "day-31_Flash_card_app_Capstone/images/card_front.png")
@@ -67,8 +65,6 @@ card_title = canvas.create_text(400, 150, text="title", font=("Ariel", 40, "ital
 card_word = canvas.create_text(400, 263, text="word", font=("Ariel", 60, "bold"))
 
 next_card()
-
-# window.after(1000, flip_card())
 
 
 window.mainloop()

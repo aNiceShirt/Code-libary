@@ -39,6 +39,10 @@
 
 # print(data["temp"].max())
 
+########################################################################################################################################################
+## NOTES below
+########################################################################################################################################################
+
 ## Get data in column
 # print(data.condition)
 
@@ -63,6 +67,10 @@
 # data_DF = pandas.DataFrame(data_dict)
 # data_DF.to_csv("day-25_csv_data/data_df.csv")
 
+# Gets row with index 0
+# data.iloc[0]
+
+# https://www.youtube.com/watch?v=zmdjNSmRXF4
 
 ## Squirrel data: Fur color count
 
